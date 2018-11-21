@@ -2,7 +2,10 @@
 <html>
   <head>
     <style>
-     p {horizontal-align;}
+     p {
+     horizontal-align;
+     font-size: 14px;
+     }
      body {background-color: #FFCC66;}
      div {
       background-color: #FFCC66;
@@ -33,6 +36,13 @@
       a {color: blue;}
       a:hover {color: purple;}
       a:active {color: red;}
+      #content {
+      border-color: #FFCC66; 
+      border-top: solid black 2px;
+      }
+      footer a {
+      font-size: 9px;
+      }
    </style>
     <title>
       News
@@ -47,11 +57,11 @@
       <a href="https://pointpencils.github.io/pointpencils/news.html">News</a>
     </div>
     <br>
-    <div id="partnerships">
+    <div>
       <h3>Partnerships</h3>
-      <div style="border-color: #FFCC66; border-top: solid black 2px;">
+      <div id="content">
         <h4><time datetime="2018-11-14 17:23"><strong>November 14th</strong></time></h4>
-        <p style="font-size: 14px; border: none;"> We have partnered with <a href="https://grantbork.github.io/mechpencils/"><strong>Mech Pencils</strong></a>! More news about our partnership to come</p>
+        <p> We have partnered with <a href="https://grantbork.github.io/mechpencils/"><strong>Mech Pencils</strong></a>! More news about our partnership to come</p>
     </div>
     </div>
     <div id="sponsorships" style="margin-top: 8px;">
@@ -59,6 +69,16 @@
     </div>
     <div id="version" style="margin-top: 8px;">
       <h3>Site Changes</h3>
+      <div id="content">
+        <h4>v1.0.0</h4>
+        <ul>
+          <li>Added version notes</li>
+          <li>Updated all pages</li>
+        </ul>
+      </div>
     </div>
+    <footer>
+      <a href="#version">v1.0.0</a>
+    </footer>
   </body>
 </html>
