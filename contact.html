@@ -67,10 +67,15 @@
      <p>Customer Service is one of our top priorities here at POINT Pencils. If you have any questions, please contact us.
       Whether it be over the phone, email, social media, or even in person, we have several employees who are waiting and
       happy to help you with all your questions, comments, and concerns.</p>
-      <form>
-        <label for="comment">Post a comment</label><br>
-        <input type="text" id="comment" name="comment">
-        <input type="submit" value="Submit">
+
+
+       <?php echo $_POST["name"]; ?><br>
+       <?php echo $_POST["comment"]; ?><br>
+
+      <form action="comments.php" method="post">
+       Name: <input type="text" name="name"><br>
+       E-mail: <input type="text" name="email"><br>
+       Comment: <input type="text" width=300px height=80px name="comment"><br>
       </form>
     </div>
   </body>
